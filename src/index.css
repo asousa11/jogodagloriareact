@@ -1,0 +1,476 @@
+@font-face {
+  font-family: 'Daily Hours';
+  src: url("fonts/Daily Hours.ttf");
+}
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  font-family: 'Londrina Solid', cursive;
+
+}
+
+
+
+.game {
+  padding-top: 0.5%;
+  color: white;
+
+}
+
+.game .player-text {
+  padding-top: 2%;
+  font-size: 14pt;
+}
+
+.game .game-logo {
+  margin-bottom: 20%;
+}
+.game .game-logo:hover{
+  transform: scale(1.08);
+  transition: ease-in-out 0.3s;
+}
+
+
+.imagemPergunta{
+  height: 200px;
+}
+
+
+.perguntas {
+  color: white;
+}
+
+
+.pergunta {
+  padding-top: 5%;
+  background-image: url("img/question.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.pergunta h1 {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+.pergunta #confirm-answer-button {
+  background-color: orange;
+  border: none;
+  color: white;
+}
+
+.time {
+  height: 200px;
+  font-size: 48pt;
+  margin-bottom: 10%;
+  padding-top: 6%;
+  background-image: url("./img/timer-bg.png");
+  font-family: "Daily Hours";
+  text-shadow: 2px 2px 10px #00343f;
+}
+
+.time  h1{
+  font-size: 50pt;
+  margin-top: -10%;
+  text-shadow: 2px 2px 10px #00343f;
+}
+
+.menu {
+  margin-bottom: 2%;
+  background: rgb(0,21,69);
+  background: linear-gradient(45deg, rgb(0, 21, 69) 0%, rgb(0, 71, 135) 100%);
+  background-size: cover;
+
+}
+
+.menu .col-md-4{
+  background: rgb(0,119,134);
+  background: linear-gradient(45deg, rgba(0,119,134,1) 0%, rgba(32,178,170,1) 100%);
+
+}
+.menu .col-md-8{
+  padding-top: 9%;
+
+}
+
+.menu-button {
+  line-height: 36pt;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 24pt;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: ease-in-out 1s;
+
+}
+
+.menu-button p {
+  font-size: 36pt;
+  color: white;
+  transition: ease-in-out 1s;
+}
+
+.menu i:hover {
+  transform: scale(1.10);
+  transition: ease-in-out 0.2s;
+
+}
+#music{
+  transition: ease-in-out 0.3s;
+}
+.player-info {
+  margin-bottom: 2%;
+  background: rgb(0,21,69);
+  background: linear-gradient(45deg, rgba(0,21,69,1) 0%, rgba(0,71,135,1) 100%);
+
+}
+.player i{
+  font-size: 24pt;
+  padding-left: 20%;
+  text-shadow: 5px 5px 20px #000000;
+}
+
+.player-info .col-md-4{
+  background: rgb(0,119,134);
+  background: linear-gradient(45deg, rgba(0,119,134,1) 0%, rgba(32,178,170,1) 100%);
+  padding: 1%;
+}
+.player-info .col-md-8{
+  border-right: 5px solid orange;
+  padding-top: 9%;
+}
+.player-info i{
+  font-size: 24pt;
+  color: white;
+}
+.player-name{
+  background-color: orange;
+}
+
+
+.tabuleiro {
+  margin-top: 2%;
+  width: 100%;
+  background: url("img/table-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2%;
+  border: 5px solid #ffa500;
+  box-shadow: inset 0 0 50px #000000;
+
+}
+
+.table-unit {
+  background: darkred;
+  background: url("img/casa.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 55px;
+  width: 100%;
+  margin-bottom: 40%;
+  font-family: "Daily Hours";
+
+}
+.table-unit:hover{
+  transform: translateY(10px);
+  transition: ease-in-out 0.2s;
+}
+
+
+.table-unit-number {
+  font-size: 20pt;
+  line-height: 40pt;
+}
+
+.loja {
+  padding-top: 2%;
+  padding-bottom: 15%;
+  margin-top: 2%;
+  width: 100%;
+  background: url("img/table-background.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid orange;
+  box-shadow: inset 0 0 50px #000000;
+
+}
+.loja .container{
+  width: 80%;
+}
+
+.loja ul {
+  width: 80%;
+}
+
+.loja li {
+  list-style: none;
+}
+
+.loja #close-button {
+  border: none;
+  background: transparent;
+  color: lightseagreen;
+  font-size: 24pt;
+  color: orange;
+}
+
+.adicionar-button{
+  border: none;
+  background: transparent;
+  padding: 1% 2% 1% 2%;
+  color: mediumspringgreen;
+  font-size: 14pt;
+}
+
+.adicionar-button:disabled{
+  color: rgba(255,255,255,0.4);
+}
+#compra-button{
+  border: none;
+  background: orange;
+  padding: 1% 2% 1% 2%;
+  color: white;
+}
+#clock {
+  font-size: 20pt;
+}
+
+
+.inventario{
+  height: 380px;
+  padding-bottom: 15%;
+  background: url("./img/inventario-bg.png");
+  background-size: cover;
+  font-size: 14pt;
+
+
+}
+
+.footer {
+  width: 100%;
+  background-image: url("img/footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  padding-top: 0.65%;
+  margin-top: -1.77%;
+}
+
+
+#casa0 {
+  background-image: url("img/casa0.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+}
+
+#casa6 {
+  background-image: url("img/casa6.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+}
+
+#casa12 {
+  background-image: url("img/casa12.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+
+}
+
+
+#casa18 {
+  background-image: url("img/casa18.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+}
+
+#casa25 {
+  background-image: url("img/casa25.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  height: 80px;
+}
+
+
+
+#casa33 {
+  background-image: url("img/casa33.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  height: 80px;
+}
+
+
+#casa40 {
+  background-image: url("img/casa40.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+
+}
+
+#casa42 {
+  background-image: url("img/casa42.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+}
+
+#casa49 {
+  background-image: url("img/casa49.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  color: white;
+  font-weight: 700;
+  height: 80px;
+  width: 100%;
+}
+
+.player1{
+  color:orange;
+  font-size: 20pt;
+  text-shadow: 2px 2px 10px black;
+}
+.player2{
+  color:red;
+  font-size: 20pt;
+  text-shadow: 0px 0px 10px black;
+}
+
+#areaPergunta {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.inventario-list{
+  margin-top: 22%;
+  width: 100%;
+}
+#inv-title{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.infoTurn{
+  height: 100px;
+  margin-bottom: 5%;
+  font-size: 20pt;
+  font-family: 'Londrina Solid', cursive;
+
+}
+
+.preco{
+  padding-left: 10%;
+}
+
+
+.jogar-button{
+  background: url("./img/jogar-button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.jogar-button:hover, .musica-button:hover, .loja-button:hover{
+  transform: translateY(10px);
+  transition: 0.25s ease-in-out;
+}
+
+
+.loja-button{
+  background: url("./img/loja-button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.musica-button{
+  background: url("./img/musica-button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-bottom: 10%;
+  cursor: pointer;
+
+}
+.info-player{
+  background: url("./img/info-player-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+  font-size: 18pt;
+  font-family: 'Londrina Solid', cursive;
+
+}
+.inventario-unit-name{
+  text-align: left;
+  padding-left: 10%;
+  width: 80%;
+
+}
+.inventario-unit-value{
+  padding-right: 10%;
+}
+.card{
+  margin-bottom: 5%;
+  color: dodgerblue;
+}
+
+
